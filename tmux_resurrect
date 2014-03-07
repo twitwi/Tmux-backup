@@ -13,7 +13,7 @@ ignore_session_list=""
 backup_dir=~/.resurrect/tmux_snapshot
 export PATH="${PATH}:/usr/local/bin"
 
-if "${backup_dir}" = "" ; then
+if test "${backup_dir}" = "" ; then
     # make sure there is no wrong rm
     echo "backup_dir must not be empty"
     exit 1
